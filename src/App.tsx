@@ -14,6 +14,7 @@ import { Status } from './components/Status';
 import { ThemeContextProvider } from './components/context/ThemeContext'
 import { Box } from './components/context/Box'
 import { UserContextProvider } from './components/context/UserContext'
+import Todoapp from './components/Todoapp/Todoapp';
 
 function App() {
   const personName={
@@ -36,13 +37,13 @@ function App() {
   ]
   return (
     <div className="App">
-      <Status status='loading'/>
+      {/* <Status status='loading'/>
      <Greet name='Ajay' message={20} islogged={true}/>
     <Person name={personName}/>
     <Personlist arrnames={nameList}/>
     <Oscar>
     <Heading>PLaceholder the text</Heading>
-    </Oscar>
+    </Oscar> */}
     {/* <Button handleClick={(event)=>{
       console.log('Button CLick',event)
     }}/>
@@ -52,9 +53,10 @@ function App() {
     {/* <ThemeContextProvider>
         <Box />
       </ThemeContextProvider> */}
-      <UserContextProvider>
+      {/* <UserContextProvider>
         <User />
-      </UserContextProvider>
+      </UserContextProvider> */}
+      <Todoapp/>
     </div>
   );
 }

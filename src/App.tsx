@@ -9,7 +9,7 @@ import { Oscar } from './components/Oscar';
 import { Person } from './components/Person'
 import { Personlist } from './components/Personlist';
 import { Logged } from './components/state/Logged';
-import { User } from './components/state/User';
+import { User } from './components/context/User';
 import { Status } from './components/Status';
 import { ThemeContextProvider } from './components/context/ThemeContext'
 import { Box } from './components/context/Box'

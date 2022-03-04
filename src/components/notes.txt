@@ -1,0 +1,17 @@
+props tips are
+1.. Destructing the props by passing props by type attributes like
+      import React from "react"
+import { isPropertySignature } from "typescript"
+
+type Inputprop={
+    value:string
+    handleChange:(event:React.ChangeEvent<HTMLInputElement>)=>void
+}
+export const Input=({value,handleChange}:Inputprop)=>{
+    const handleInputChange=(event:React.ChangeEvent<HTMLInputElement>)=>{
+        console.log(event)
+    }
+     return <input type='text' value={value} onChange={handleInputChange}/>
+}
+2...IMport and exporting typescript
+3... usage of similar code at once in personlist.tsx
